@@ -1741,6 +1741,11 @@ span
         font-size: .8rem;
     }
 
+    .img-box {
+        left: 2;
+        top: 0;
+        margin-top: 2rem;
+    }
     
     .img-about img
     {
@@ -1811,7 +1816,7 @@ span
         box-sizing: border-box; 
     }
     .mode-btn {
-        top: 13px;
+        top: 15px;
         right: 40px;
     }
 }
