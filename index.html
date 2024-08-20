@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Portfolio Website</title>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+    <!--header site-->
+    <header>
+        <div class="logo"><span>Z</span>ahra Yasin</div>
+        <ul class="navlist">
+            <li><a href="#home" style="--i:1;">Home</a></li>
+            <li><a href="#about" style="--i:2;">About</a></li>
+            <li><a href="#services" style="--i:3;">Services</a></li>
+            <li><a href="#skills" style="--i:4;">Skills</a></li>
+            <li><a href="#portfolio" style="--i:5;">Portfolio</a></li>
+            <li><a href="#contact" style="--i:6;">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class="bx bx-menu"></div>
+        <button id="mode-toggle" class="btn mode-btn">
+            <i id="mode-icon" class="fas fa-moon"></i>
+        </button>
+
+    </header>
+
+
+    <!-- Custom cursor -->
+<div class="custom-cursor"></div>
+
+
+    <!--home section-->
+    <section id="home" class="home">
+        <div class="home-content scroll-scale">
+            <h4 id="heading">Hi! I'm <span id="name">Zahra Yasin</span></h4>
+            <div class="change-text">
+                <h3 id="Sub-heading">And I'm</h3>
+                <h3>
+                    <span class="word">Software&nbsp;Engineer</span>
+                    <span class="word">Frontend&nbsp;Developer</span>
+                    <span class="word">Graphic&nbsp;Designer</span>
+                    <span class="word">Problem&nbsp;Solver</span>
+                    <span class="word">AI&nbsp;Enthusiast</span>
+                </h3>
+            </div>
+
+            <p>
+                "Welcome to a realm where every line of code dances with innovation and 
+                each pixel is carefully crafted to spark wonder and ignite inspiration"
+            </p>
+
+            <div class="info-box">
+                <div class="email-info">
+                    <h5><i class='bx bx-envelope'></i>
+                    <span>zahrayasin2209@gmail.com</span></h5>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <!-- <a href="#" class="btn">Download CV</a> -->
+                <a href="Resume.pdf" class="btn" download="Resume.pdf">Download CV</a>
+                <!-- <a href="#" class="btn">Hire Me Now!</a> -->
+                <a href="#contact" class="btn" id="hireMeBtn">Hire Me Now!</a>
+
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/zahrayasin2209" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zahra-yasin-18b3a6246/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="home-image scroll-scale">
+            <div class="img-box">
+                
+                <a href="https://lottie.host/bc0a9e14-81b8-4625-a728-4ae77cbe0da9/TAYFd0mVIM.json" download="https://lottie.host/bc0a9e14-81b8-4625-a728-4ae77cbe0da9/TAYFd0mVIM.json">
+                    <lottie-player src="https://lottie.host/bc0a9e14-81b8-4625-a728-4ae77cbe0da9/TAYFd0mVIM.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                </a>
+
+            </div>
+        </div>
+        
+    </section>
+
+    <!--About section-->
+    <section id="about" class="about">
+        <div class="img-about scroll-scale">
+            <a href="https://lottie.host/67885d9e-4ffd-4486-9ed4-44a02f0d06aa/0D4q9NmqrK.json" download="https://lottie.host/67885d9e-4ffd-4486-9ed4-44a02f0d06aa/0D4q9NmqrK.json">
+                <lottie-player src="https://lottie.host/67885d9e-4ffd-4486-9ed4-44a02f0d06aa/0D4q9NmqrK.json" background="transparent" speed="1" loop autoplay></lottie-player>
+            </a>
+
+            
+        </div>
+
+        <div class="about-content scroll-scale">
+            <span>Let me introduce myself!</span>
+            <h2>About Me</h2>
+            <h3>A Passion for Excellence</h3>
+            <p id="about-brief">
+                As a Software Engineering Student and AI Enthusiast, I excel in solving complex problems 
+                and crafting intuitive user experiences. My expertise in front-end development ensures 
+                that the solutions I build are not only visually appealing but also highly functional. 
+                I'm dedicated to delivering innovative and high-quality results that exceed expectations. 
+                Let's bring your ideas to life. <i class='bx bxs-bulb'></i>
+            </p>
+            <p id="about-full" style="display: none;">
+                As a passionate Software Engineer Student and AI Enthusiast, I thrive on solving complex problems 
+                with innovative solutions. My expertise in front-end development allows me to craft 
+                seamless and intuitive user experiences that are both visually striking and functionally robust. 
+                With a strong foundation in web development technologies, I am committed to delivering 
+                high-quality, responsive designs that not only meet client expectations but also push 
+                the boundaries of creativity. Whether it’s developing a new application from the ground up 
+                or enhancing an existing system, my focus is always on efficiency, elegance, and innovation. 
+                Let's work together to turn ideas into reality. <i class='bx bxs-bulb'></i>
+                <br><br>
+                <span id="education">Education:</span> 
+                <span id="qualification">BSIT (Punjab University College of Information Technology) 2021-2025</span>
+            </p>
+            <div class="btn-box">
+                <a href="javascript:void(0);" class="btn" id="read-more-btn" onclick="toggleReadMore(event)">
+                    Read More
+                </a>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <!--Services section-->
+    <section id="services" class="services">
+        <div class="main-text scroll-scale">
+            <span>What I will do for you</span>
+            <h2>Our Services</h2>
+        </div>
+
+        <div class="section-services scroll-bottom">
+            <div class="service-box">
+                <i class='bx bxs-layer service-icon'></i>
+                <h3>Graphic Designer</h3>
+                <p id="graphic-brief" class="justified-text">
+                    I create visually compelling designs that leave a long-lasting impact. 
+                    My expertise spans across branding, digital design, and print media.
+                </p>
+                <p id="graphic-full" class="justified-text" style="display: none;">
+                    As a Graphic Designer, I specialize in crafting unique visual experiences that enhance 
+                    brand identity. My skills include logo design, social media graphics, and marketing 
+                    collateral. I ensure each design is both aesthetically pleasing and strategically aligned 
+                    with the client’s goals, making every project stand out in a crowded marketplace.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="javascript:void(0);" class="btn" onclick="toggleService('graphic')">Read More</a>
+                </div>
+            </div>
+            
+        
+            <div class="service-box">
+                <i class='bx bx-desktop service-icon'></i>
+                <h3>Frontend Developer</h3>
+                <p id="frontend-brief" class="justified-text">
+                    I specialize in building responsive and dynamic websites that provide seamless user 
+                    experiences across all devices.
+                </p>
+                <p id="frontend-full" class="justified-text" style="display: none;">
+                    As a Frontend Developer, I bring designs to life with clean, efficient code and a focus 
+                    on the user-centered design. My skills include HTML, CSS, JavaScript, and various frontend 
+                    frameworks. I ensure that every website I develop is fully responsive, accessible, and 
+                    optimized for performance, delivering a smooth and engaging experience for users.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="javascript:void(0);" class="btn" onclick="toggleService('frontend')">Read More</a>
+                </div>
+            </div>
+        
+            <div class="service-box">
+                <i class='bx bx-code-alt service-icon'></i>
+                <h3>UI/UX Designing</h3>
+                <p id="uiux-brief" class="justified-text">
+                    I excel in integrating UI/UX designs into functional and user-friendly interfaces that 
+                    enhance user satisfaction and engagement.
+                </p>
+                <p id="uiux-full" class="justified-text" style="display: none;">
+                    My UI/UX Design Integration skillset involves translating prototypes into fully functional 
+                    interfaces. I work closely with design teams to ensure that every element 
+                    of the user experience is thoughtfully implemented, from layout and typography to interactive
+                    elements. My goal is to create intuitive, and accessible pleasing digital 
+                    experiences that resonate with users.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="javascript:void(0);" class="btn" onclick="toggleService('uiux')">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--Skills section-->
+    <section id="skills" class="skills">
+        <div class="main-text scroll-scale">
+            <span>Technical and Professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left scroll-scale">
+                <h3>Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Front End Web Development</p>
+                        <p>87%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="frontend"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Web Designing</p>
+                        <p>92%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="webdesign"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Graphic Designing</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="graphicdesign"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>UI/UX Designing</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="uiuxdesign"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-right scroll-scale">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="75"></div>
+                        <div class="text">
+                            <big>75%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="95"></div>
+                        <div class="text">
+                            <big>95%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio Section-->
+    <section id="portfolio" class="portfolio">
+        <div class="main-text scroll-scale">
+            <span>What I have done</span>
+            <h2>Latest Projects</h2>
+        </div>
+
+        <div class="container">
+            <div class="fillter-buttons scroll-scale">
+                <button class="button" data-filter="all">All</button>
+                <button class="button" data-filter=".web">Web App</button>
+                <button class="button" data-filter=".product">Product</button>
+                <button class="button" data-filter=".inter">Interacting</button>
+            </div>
+
+            <div class="portfolio-gallery scroll-bottom">
+                <div class="port-box mix web inter">
+                    <div class="port-image">
+                        <img src="./img/Mediconnect.png" alt="Project#1">
+                    </div>
+                    <div class="port-content">
+                        <h3>Web Development</h3>
+                        <p>
+                            Mediconnect, an innovative healthcare management system designed to streamline patient care, 
+                            optimize administrative tasks, & enhance overall efficiency of healthcare facilities.
+                        </p>
+                        <a href="https://github.com/ZahraYasin2209/Mediconnect" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web inter">
+                    <div class="port-image">
+                        <img src="./img/Quran-Website.png" alt="Project#2">
+                    </div>
+                    <div class="port-content">
+                        <h3>Frontend Development</h3>
+                        <p>
+                            The Quranic Ayah Search, Recitation, Prayer Timings, and Qibla Direction website offers a comprehensive 
+                            platform for spiritual guidance, allowing users to search and recite Quranic verses. 
+                        </p>
+                        <a href="https://github.com/ZahraYasin2209/IslamicWebsite" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="./img/GitHub-Profile-Finder.png" alt="Project#3">
+                    </div>
+                    <div class="port-content">
+                        <h3>Interactive Web App</h3>
+                        <p>Github Profile Finder is designed to explore GitHub profiles, providing in-depth insights into 
+                            user contributions and repositories, helping you to connect with developers across platform.</p>
+                        <a href="https://github.com/ZahraYasin2209/GitHub-Profile-Finder" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix web product">
+                    <div class="port-image">
+                        <img src="./img/Rentee-Car-Site.png" alt="Project#4">
+                    </div>
+                    <div class="port-content">
+                        <h3>Brand Identity</h3>
+                        <p>
+                            Rentee Car Service, user-friendly platform offering car rental services, allowing customers to browse, book,
+                            & manage vehicle rentals with ease, while providing options to meet every travel need.
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="./img/To-Do-List.png" alt="Project#5">
+                    </div>
+                    <div class="port-content">
+                        <h3>Mobile App Design</h3>
+                        <p>To-Do List application, designed to help users efficiently manage tasks, prioritize activities, and track 
+                            progress, ensuring nothing important is overlooked.</p>
+                        <a href="https://github.com/ZahraYasin2209/To-Do-List" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix product">
+                    <div class="port-image">
+                        <img src="./img/Word-Counter.png" alt="Project#6">
+                    </div>
+                    <div class="port-content">
+                        <h3>Web Application</h3>
+                        <p>
+                            Words Counter app that accurately counts words and characters in real-time, making it an essential tool 
+                            for writers, students, and professionals to monitor word limits and improve productivity.
+                        </p>
+                        <a href="https://github.com/ZahraYasin2209/WPM-Calculator" target="_blank"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact">
+        <div class="main-text scroll-scale">
+            <span>Ask me questions</span>
+            <h2>Contact Me</h2>
+        </div>
+    
+        <form action="mailto:zahrayasin2209@gmail.com" method="post" enctype="text/plain" class="scroll-bottom">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <input type="text" name="Address" placeholder="Your Address">
+            <input type="number" name="Phone Number" placeholder="Phone Number">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <div class="btn-box formBtn">
+                <button type="submit" class="btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!--Footer Website-->
+    <footer>
+        <p>Copyright &copy; 2024 by Zahra Yasin || All rights reserved.</p>
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </footer>
+
+    <!-- Chatbot Icon and Container -->
+    <div class="chat-icon" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i> <!-- FontAwesome chat icon -->
+    </div>
+
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <i class="fas fa-sync-alt chat-reset-icon" onclick="resetChat()"></i>
+            ZahraBot
+            <i class="fas fa-times chat-close-icon" onclick="toggleChat()"></i>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="message bot">
+                Hello, I'm ZahraBot! 👋 <br><br>
+                Welcome to my portfolio. I'm here to help with any questions about my work, projects, or skills. 
+                How can I assist you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js" defer></script>
+    <script src="mixitup.min.js"></script>
+</body>
+</html>
