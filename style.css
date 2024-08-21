@@ -26,7 +26,7 @@ html
     --h2-font: 3rem;
 
    /* For Chatbot */
-   --chat-bg-color: rgba(0, 0, 0, 0.8); /* Background color for faint effect */
+   --chat-bg-color: rgba(0, 0, 0, 0.8);   /* Background color for faint effect */
    --chat-font: "Poppins", sans-serif; 
 
     --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3),
@@ -157,47 +157,10 @@ section
     padding: 100px 10%;
 }
 
-.home
+
+/* For Light Mode */
+.light-mode 
 {
-    min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    grid-gap: 4em;
-}
-
-.home-content
-{
-    max-width: 600px;
-}
-
-.home-content h4
-{
-    font-size: var(--big-font);
-    font-weight: 650;
-}
-
-.change-text
-{
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-top: 7px;
-}
-
-#heading
-{
-    font-size: 32px;
-}
-
-#name
-{
-    font-size: 40px;
-}
-
-
-.light-mode {
     --bg-color: #F7E7CE;
     --text-color: #000000;
     --hover-color: #003b7a;
@@ -206,13 +169,15 @@ section
 }
 
 /* Apply the styles using the variables */
-body.light-mode {
+body.light-mode 
+{
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
 
-.service-box,.contact, .skills {
+.service-box,.contact, .skills 
+{
     background-color: var(--secon-bg-color);
     color: var(--text-color);
 }
@@ -317,18 +282,23 @@ body.light-mode {
     color: black;
 }
 
-.navlist a, .social-icons a {
+.navlist a, .social-icons a 
+{
     color: var(--text-color);
 }
 
-.navlist a:hover, .social-icons a:hover {
+.navlist a:hover, .social-icons a:hover 
+{
     color: var(--hover-color);
 }
 
-.mode-btn {
+
+/* Mode Button */
+.mode-btn 
+{
     background-color: var(--bg-color);
     color: var(--hover-color);
-    padding: 10px;
+    padding: 11px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
@@ -341,10 +311,51 @@ body.light-mode {
     right: 20px;
 }
 
-.mode-btn i {
+.mode-btn i 
+{
     font-size: 25px;
 }
 
+
+/* Home Section */
+.home
+{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 4em;
+}
+
+.home-content
+{
+    max-width: 600px;
+}
+
+.home-content h4
+{
+    font-size: var(--big-font);
+    font-weight: 650;
+}
+
+.change-text
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 7px;
+}
+
+#heading
+{
+    font-size: 32px;
+}
+
+#name
+{
+    font-size: 40px;
+}
 
 .change-text h3
 {
@@ -562,6 +573,7 @@ body.light-mode {
 
 
 
+/* About Section */
 .about
 {
     display: flex;
@@ -577,7 +589,8 @@ body.light-mode {
     position: relative;
 }
 
-.img-about lottie-player {
+.img-about lottie-player 
+{
     width: 400px;
     height: 400px;
 } 
@@ -631,8 +644,6 @@ body.light-mode {
     color: #b0fcff;
 }
 
-
-
 .main-text
 {
     width: 100%;
@@ -684,6 +695,9 @@ body.light-mode {
     top: 2px;
 }
 
+
+
+/* Services Section */
 .section-services
 {
     display: flex;
@@ -746,6 +760,9 @@ body.light-mode {
     text-align: justify;
 }
 
+
+
+/* Skills Section */
 .skills
 {
     background: var(--secon-bg-color);
@@ -913,6 +930,10 @@ body.light-mode {
     color: var(--hover-color);
 }
 
+
+
+
+/* Portfolio Section */
 .portfolio-gallery
 {
     display: grid;
@@ -1035,6 +1056,10 @@ body.light-mode {
     color: var(--secon-bg-color);
 }
 
+
+
+
+/* Contact Section */
 .contact
 {
     background: var(--secon-bg-color);
@@ -1081,6 +1106,9 @@ body.light-mode {
     font-size: 1rem;
 }
 
+
+
+/* Footer Section */
 footer
 {
     padding: 1.5rem 10%;
@@ -1399,6 +1427,30 @@ span
 }
 
 
+/* Star Button */
+#star-btn {
+    font-size: 1.7rem; 
+    color: var(--hover-color); 
+    cursor: pointer; 
+    transition: transform 0.3s ease, color 0.3s ease; 
+    position: fixed; 
+    right: 65px; 
+    z-index: 1000;
+}
+
+#star-btn:hover {
+    color: gold; 
+    transform: scale(1.2); 
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.8),
+                 0 0 30px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.8),
+                 0 0 50px rgba(255, 215, 0, 0.8); /* Glow effect */
+}
+
+#star-btn:active {
+    transform: scale(1.1); 
+    color: #ffd700; 
+}
+
 
 @keyframes morph 
 {
@@ -1522,6 +1574,10 @@ span
         --h2-font: 3rem;
     } 
 
+    #star-btn {
+        display: none; 
+    }
+
     #heading {
         font-size: 27px; /* Adjust as needed */
     }
@@ -1590,6 +1646,10 @@ span
 
     #heading {
         font-size: 23px; /* Adjust as needed */
+    }
+
+    #star-btn {
+        display: none; 
     }
 
     #name {
@@ -1741,8 +1801,12 @@ span
         font-size: .8rem;
     }
 
+    #star-btn {
+        display: none; 
+    }
+
     .img-box {
-        left: 1px;
+        left: 1.5px;
         top: 0;
         margin-top: 2rem;
     }
