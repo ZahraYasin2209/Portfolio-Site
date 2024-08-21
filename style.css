@@ -48,7 +48,8 @@ body
 }
 
 /* for chatbot */
-body.faint {
+body.faint 
+{
     background-color: var(--chat-bg-color);
     transition: background-color 0.3s ease-in-out;
 }
