@@ -559,3 +559,13 @@ document.querySelectorAll('a, button, .btn').forEach(el => {
         customCursor.classList.remove('hover');
     });
 });
+
+
+
+document.getElementById('star-btn').addEventListener('click', function() {
+    this.classList.toggle('bx-star'); // Toggle between the star icon and a filled star icon
+    this.classList.toggle('bx-star-fill'); // Ensure you have 'bx-star-fill' in your icon library
+    this.style.color = this.classList.contains('bx-star-fill') ? 'gold' : 'var(--hover-color)';
+    alert('Thank you for appreciating my work! 😊');
+
+});
